@@ -58,12 +58,12 @@ You can install Postman via this website: https://www.postman.com/downloads/
     -   [x] Commit: `Implement delete function in Subscriber repository.`
     -   [x] Write answers of your learning module's "Reflection Publisher-1" questions in this README.
 -   **STAGE 2: Implement services and controllers**
-    -   [ ] Commit: `Create Notification service struct skeleton.`
-    -   [ ] Commit: `Implement subscribe function in Notification service.`
-    -   [ ] Commit: `Implement subscribe function in Notification controller.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification service.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification controller.`
-    -   [ ] Write answers of your learning module's "Reflection Publisher-2" questions in this README.
+    -   [x] Commit: `Create Notification service struct skeleton.`
+    -   [x] Commit: `Implement subscribe function in Notification service.`
+    -   [x] Commit: `Implement subscribe function in Notification controller.`
+    -   [x] Commit: `Implement unsubscribe function in Notification service.`
+    -   [x] Commit: `Implement unsubscribe function in Notification controller.`
+    -   [x] Write answers of your learning module's "Reflection Publisher-2" questions in this README.
 -   **STAGE 3: Implement notification mechanism**
     -   [ ] Commit: `Implement update method in Subscriber model to send notification HTTP requests.`
     -   [ ] Commit: `Implement notify function in Notification service to notify each Subscriber.`
@@ -91,5 +91,17 @@ This is the place for you to write reflections:
     Menggunakan DashMap adalah pilihan terbaik untuk memastikan keamanan dalam lingkungan multithreading. DashMap menyediakan solusi yang baik untuk keamanan concurrency pada multithreaded environment dalam program Rust. Singleton pattern dapat diimplementasikan, penggunaannya mungkin tidak diperlukan karena DashMap secara efektif menyediakan fungsionalitas yang diperlukan sambil mempertahankan keamanan bersama.
 
 #### Reflection Publisher-2
+
+1. In the Model-View Controller (MVC) compound pattern, there is no “Service” and “Repository”. Model in MVC covers both data storage and business logic. Explain based on your understanding of design principles, why we need to separate “Service” and “Repository” from a Model?
+
+    Dalam MVC, Service dan Repository dipisahkan dari Model untuk memenuhi prinsip tanggung jawab tunggal (Single Responsibility Principle). Service menangani logika aplikasi dan Repository mengelola akses data. Pemisahan ini akan memudahkan pengembangan serta pemeliharaan program.
+
+2. What happens if we only use the Model? Explain your imagination on how the interactions between each model (Program, Subscriber, Notification) affect the code complexity for each model?
+
+    Jika hanya menggunakan Model tanpa Service dan Repository, kompleksitas dalam setiap model akan meningkat. Setiap model akan bertanggung jawab mengelola akses data, manipulasi, dan logika aplikasi. Hal ini dapat membuat kode menjadi rumit dan sulit dipelihara. Dengan memisahkan tanggung jawab dan menggunakan Service dan Repository, setiap model dapat fokus pada tugas intinya.
+
+3. Have you explored more about Postman? Tell us how this tool helps you to test your current work. You might want to also list which features in Postman you are interested in or feel like it is helpful to help your Group Project or any of your future software engineering projects.
+
+    Saya sudah menggunakan Postman sedikit pada mata kuliah di semester sebelumnya. Dengan Postman, kita dapat mengirim request pada suatu endpoint dan melihat apakah respons yang dikembalikan sudah sesuai, hal ini sangat memudahkan pengecekan program.
 
 #### Reflection Publisher-3
